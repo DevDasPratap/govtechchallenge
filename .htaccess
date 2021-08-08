@@ -1,3 +1,11 @@
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteCond %{HTTP_HOST} !^en\.govtechchallenge\.es
-RewriteRule ^(.*)$ http://www.govtechchallenge.es/$1 [R=permanent,L]
+RewriteCond %{HTTP_HOST} !^en\.govtechchallenge\.es$
+RewriteRule ^(.*)$ https://www.govtechchallenge.es/$1 [QSA,L,R=301]
+RewriteBase /
+RewriteRule ^index\.html$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.html [L]
+</IfModule>
