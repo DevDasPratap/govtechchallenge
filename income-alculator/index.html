@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html>
+   <head>
+         <!-- META TAGS -->
+         <meta charset='UTF-8'/>
+         <meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/>
+         <meta content='IE=edge' http-equiv='X-UA-Compatible'/>
+         <title>Online Income Calculator tool makes the calculation faster</title>
+         <meta name="Description" content="Online Income Calculator tool makes the calculation faster. you can estimate what your income would be. see how much your hourly, daily, weekly, monthly, yearly.">
+         <meta name="Keywords" content="income calculator, salary calculator, net salary calculator, annual income calculator">
+         <link rel="icon" href="./assets/favicon.png" type="image/gif" sizes="16x16">
+
+      	<!-- CSS FILES -->
+		   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      	<link rel="stylesheet" type="text/css" href="assets/style.min.css">
+      	<link rel="stylesheet" type="text/css" href="assets/custom.css">
+      	
+         <!-- JS FILES -->
+      	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      	<script type="text/javascript" src="assets/script.min.js"></script>
+      	<script type="text/javascript" src="assets/custom.js"></script>
+
+   </head>
+   <body class='onIndex onHome' id='mainContent'>
+      <input class='navInput hidden' id='offnav-input' type='checkbox' />
+      <div class='mainWrapper'>
+         <header class='header' id='header'>
+            <div class='headerContent'>
+               <div class='headerDiv headerLeft'>
+                  <div class='headerIcon'>
+                     <label aria-label='Menu Navigation' class='navMenu' for='offnav-input'>
+                        <svg class='line svg-1' viewBox='0 0 24 24'>
+                           <line x1='3' x2='21' y1='12' y2='12'></line>
+                           <line x1='3' x2='21' y1='6' y2='6'></line>
+                           <line x1='3' x2='21' y1='18' y2='18'></line>
+                        </svg>
+                        <svg class='line svg-2' viewBox='0 0 24 24'>
+                           <g transform='translate(12.000000, 12.000000) rotate(-90.000000) translate(-12.000000, -12.000000) translate(5.000000, 8.500000)'>
+                              <path d='M14,0 C14,0 9.856,7 7,7 C4.145,7 0,0 0,0'></path>
+                           </g>
+                        </svg>
+                     </label>
+                  </div>
+                  <div class='section' id='header-widget'>
+                     <div class='widget Header' data-version='2' id='Header1'>
+                        <div class='headerInner'>
+                           <h1><span class='headerTitle'>Income Calculator</span></h1>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class='headerDiv headerRight'>
+                  <div class='headerIcon'>
+                     <span aria-label='Dark' class='navDark' data-text='Dark' onclick='darkMode()' role='button'><i></i></span>
+                  </div>
+               </div>
+            </div>
+         </header>
+         <div class='mainMenu'>
+            <div class='section' id='main-menu'>
+               <div class='widget HTML' data-version='2' id='HTML000'>
+                  <ul class='htmlMenu' itemscope='itemscope' itemtype='https://schema.org/SiteNavigationElement'>
+                     <li class='close'>
+                        <label class='link' for='offnav-input'>
+                           <svg class='line' viewBox='0 0 24 24'>
+                              <g transform='translate(12.000000, 12.000000) rotate(-270.000000) translate(-12.000000, -12.000000) translate(5.000000, 8.500000)'>
+                                 <path d='M14,0 C14,0 9.856,7 7,7 C4.145,7 0,0 0,0'></path>
+                              </g>
+                           </svg>
+                           <span class='name' data-text='Back'></span> 
+                        </label>
+                     </li>
+                     <li class='dropDown break'>
+                        <input class='dropMenu hidden' id='offdropMenu2' name='dropDown' type='checkbox' />
+                        <label class='link' for='offdropMenu2'>
+                           <svg class='line' viewBox='0 0 24 24'>
+                              <g transform='translate(2.500000, 2.500000)'>
+                                 <line x1='6.6787' x2='12.4937' y1='12.0742685' y2='12.0742685'></line>
+                                 <path d='M-1.13686838e-13,5.29836453 C-1.13686838e-13,2.85645977 1.25,0.75931691 3.622,0.272650243 C5.993,-0.214968804 7.795,-0.0463973758 9.292,0.761221672 C10.79,1.56884072 10.361,2.76122167 11.9,3.63645977 C13.44,4.51265024 15.917,3.19645977 17.535,4.94217405 C19.229,6.7697931 19.2200005,9.57550739 19.2200005,11.3640788 C19.2200005,18.1602693 15.413,18.6993169 9.61,18.6993169 C3.807,18.6993169 -1.13686838e-13,18.2288407 -1.13686838e-13,11.3640788 L-1.13686838e-13,5.29836453 Z'></path>
+                              </g>
+                           </svg>
+                          <span class='name'>Math Calculator</span>
+                           <svg class='line down' viewBox='0 0 24 24'>
+                              <g transform='translate(5.000000, 8.500000)'>
+                                 <path d='M14,0 C14,0 9.856,7 7,7 C4.145,7 0,0 0,0'></path>
+                              </g>
+                           </svg>
+                        </label>
+                        <ul>
+                           <li itemprop='name'><a href='https://www.govtechchallenge.es/standard-deviation-calculator' itemprop='url'>Standard Deviation Calculator</a></li>
+                           <li itemprop='name'><a href='https://www.govtechchallenge.es/factoring-calculator' itemprop='url'>Factoring Calculator</a></li>
+                           <li itemprop='name'><a href='https://www.govtechchallenge.es/percentage-calculator' itemprop='url'>Percentage Calculator</a></li>
+                           <li itemprop='name'><a href='https://www.govtechchallenge.es/density-calculator' itemprop='url'>Density Calculator</a></li>
+                           <li itemprop='name'><a href='https://www.govtechchallenge.es/cross-product-calculator' itemprop='url'>Cross Product Calculator</a></li>
+                           
+                        </ul>
+                     </li>
+                     <li>
+                        <a class='link' href='https://www.govtechchallenge.es/' itemprop='url'>
+                         
+                           <span class='name' itemprop='name'>Loan Calculator</span> 
+                        </a>
+                     </li>
+                     <li>
+                        <a class='link' href='https://www.govtechchallenge.es/mortgage-calculator' itemprop='url'>
+                         
+                           <span class='name' itemprop='name'>Mortgage Calculator
+</span> 
+                        </a>
+                     </li>
+                     <li>
+                        <a class='link' href='https://www.govtechchallenge.es/car-loan-calculator' itemprop='url'>
+                         
+                           <span class='name' itemprop='name'>Car Loan Calculator</span> 
+                        </a>
+                     </li>
+                     <li>
+                        <a class='link' href='https://www.govtechchallenge.es/car-payment-calculator' itemprop='url'>
+                         
+                           <span class='name' itemprop='name'>Car Payment Calculator</span> 
+                        </a>
+                     </li>
+                     <li>
+                        <a class='link' href='https://www.govtechchallenge.es/home-loan-calculator' itemprop='url'>
+                         
+                           <span class='name' itemprop='name'>Home Loan Calculator</span> 
+                        </a>
+                     </li>
+                     <li>
+                        <a class='link' href='https://www.govtechchallenge.es/mortgage-payment-calculator' itemprop='url'>
+                         
+                           <span class='name' itemprop='name'>Mortgage Payment Calculator</span> 
+                        </a>
+                     </li>
+                     <li>
+                        <a class='link' href='https://www.govtechchallenge.es/personal-loan-calculator' itemprop='url'>
+                         
+                           <span class='name' itemprop='name'>Personal Loan Calculator</span> 
+                        </a>
+                     </li>
+                     <li>
+                        <a class='link' href='https://www.govtechchallenge.es/student-loan-calculator' itemprop='url'>
+                         
+                           <span class='name' itemprop='name'>Student Loan Calculator</span> 
+                        </a>
+                     </li>
+                     <li>
+                        <a class='link' href='https://www.govtechchallenge.es/mortgage-repayment-calculator' itemprop='url'>
+                         
+                           <span class='name' itemprop='name'>Mortgage Repayment Calculator</span> 
+                        </a>
+                     </li>
+                     <li>
+                        <a class='link' href='https://www.govtechchallenge.es/salary-calculator' itemprop='url'>
+                         
+                           <span class='name' itemprop='name'>Salary Calculator</span> 
+                        </a>
+                     </li>
+                     <li>
+                        <a class='link' href='https://www.govtechchallenge.es/salary-to-hourly-calculator' itemprop='url'>
+                         
+                           <span class='name' itemprop='name'>Salary To Hourly Calculator</span> 
+                        </a>
+                     </li>
+                     <li>
+                        <a class='link' href='https://www.govtechchallenge.es/income-calculator' itemprop='url'>
+                         
+                           <span class='name' itemprop='name'>Income Calculator</span> 
+                        </a>
+                     </li>
+                      <li>
+                        <a class='link' href='https://www.govtechchallenge.es/about' itemprop='url'>
+                           <svg class='line' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+                              <g transform='translate(2.749500, 2.549500)'>
+                                 <path d='M6.809,18.9067 C3.137,18.9067 9.41469125e-14,18.3517 9.41469125e-14,16.1277 C9.41469125e-14,13.9037 3.117,11.8997 6.809,11.8997 C10.481,11.8997 13.617,13.8847 13.617,16.1077 C13.617,18.3307 10.501,18.9067 6.809,18.9067 Z'></path>
+                                 <path d='M6.809,8.728 C9.219,8.728 11.173,6.774 11.173,4.364 C11.173,1.954 9.219,-2.48689958e-14 6.809,-2.48689958e-14 C4.399,-2.48689958e-14 2.44496883,1.954 2.44496883,4.364 C2.436,6.766 4.377,8.72 6.778,8.728 L6.809,8.728 Z'></path>
+                                 <path d='M14.0517,7.5293 C15.4547,7.1543 16.4887007,5.8753 16.4887007,4.3533 C16.4897,2.7653 15.3627,1.4393 13.8647,1.1323'></path>
+                                 <path d='M14.7113,11.104 C16.6993,11.104 18.3973,12.452 18.3973,13.655 C18.3973,14.364 17.8123,15.092 16.9223,15.301'></path>
+                              </g>
+                           </svg>
+                           <span class='name' itemprop='name'>About</span> 
+                        </a>
+                     </li>
+                     <li class='break'>
+                        <a class='link' href='https://www.govtechchallenge.es/contact' itemprop='url'>
+                           <svg class='line' viewBox='0 0 24 24'>
+                              <g transform='translate(2.452080, 2.851980)'>
+                                 <path d='M15.0928322,6.167017 C15.0928322,6.167017 11.8828071,10.0196486 9.53493746,10.0196486 C7.18807029,10.0196486 3.941955,6.167017 3.941955,6.167017'></path>
+                                 <path d='M1.04805054e-13,9.11679198 C1.04805054e-13,2.27869674 2.38095238,8.8817842e-15 9.52380952,8.8817842e-15 C16.6666667,8.8817842e-15 19.047619,2.27869674 19.047619,9.11679198 C19.047619,15.9538847 16.6666667,18.233584 9.52380952,18.233584 C2.38095238,18.233584 1.04805054e-13,15.9538847 1.04805054e-13,9.11679198 Z'></path>
+                              </g>
+                           </svg>
+                           <span class='name' itemprop='name'>Contact</span> 
+                        </a>
+                     </li>
+                      <li class='break'>
+                        <a class='link' href='https://www.govtechchallenge.es/privacy-policy' itemprop='url'>
+                           <svg class='line' viewBox='0 0 24 24'>
+                              <g transform='translate(2.452080, 2.851980)'>
+                                 <path d='M15.0928322,6.167017 C15.0928322,6.167017 11.8828071,10.0196486 9.53493746,10.0196486 C7.18807029,10.0196486 3.941955,6.167017 3.941955,6.167017'></path>
+                                 <path d='M1.04805054e-13,9.11679198 C1.04805054e-13,2.27869674 2.38095238,8.8817842e-15 9.52380952,8.8817842e-15 C16.6666667,8.8817842e-15 19.047619,2.27869674 19.047619,9.11679198 C19.047619,15.9538847 16.6666667,18.233584 9.52380952,18.233584 C2.38095238,18.233584 1.04805054e-13,15.9538847 1.04805054e-13,9.11679198 Z'></path>
+                              </g>
+                           </svg>
+                           <span class='name' itemprop='name'>Privacy Policy</span> 
+                        </a>
+                     </li>
+                      <li class='break'>
+                        <a class='link' href='https://www.govtechchallenge.es/disclaimer' itemprop='url'>
+                           <svg class='line' viewBox='0 0 24 24'>
+                              <g transform='translate(2.452080, 2.851980)'>
+                                 <path d='M15.0928322,6.167017 C15.0928322,6.167017 11.8828071,10.0196486 9.53493746,10.0196486 C7.18807029,10.0196486 3.941955,6.167017 3.941955,6.167017'></path>
+                                 <path d='M1.04805054e-13,9.11679198 C1.04805054e-13,2.27869674 2.38095238,8.8817842e-15 9.52380952,8.8817842e-15 C16.6666667,8.8817842e-15 19.047619,2.27869674 19.047619,9.11679198 C19.047619,15.9538847 16.6666667,18.233584 9.52380952,18.233584 C2.38095238,18.233584 1.04805054e-13,15.9538847 1.04805054e-13,9.11679198 Z'></path>
+                              </g>
+                           </svg>
+                           <span class='name' itemprop='name'>Disclaimer</span> 
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <label class='fullClose menu' for='offnav-input'></label>
+         </div>
+         <div class='mainInner sectionInner'>
+            <div class='blogContent'>
+               <!-- CONTENT AREA -->
+               <main class='mainbar'>
+               	  <div id="calc">
+               		<h2>INCOME CALCULATOR</h2>
+               		<div class="calc-form">
+               			<div class="row">
+               				<div class="col-md-6 form-group">
+              						<label>Amount ($)</label>
+              						<input type="number" class="form-control" min="0" value="10" id="salaryAmount">
+               				</div>
+                           <div class="col-md-6 form-group">
+                              <label>Type</label>
+                              <select class="form-control" id="salaryType">
+                                 <option value="0" selected>Hour</option>
+                                 <option value="1">Day</option>
+                                 <option value="2">Weekly</option>
+                                 <option value="3">Bi-Weekly</option>
+                                 <option value="4">Semi-Monthly</option>
+                                 <option value="5">Monthly</option>
+                                 <option value="6">Quarterly</option>
+                                 <option value="7">Annual</option>
+                              </select>
+                           </div>
+               				<div class="col-md-6 form-group">
+              						<label>Hours per Week</label>
+              						<input type="number" class="form-control" min="0" value="54" id="hpw">
+               				</div>
+               				<div class="col-md-6 form-group">
+              						<label>Days per Week</label>
+              						<input type="number" class="form-control" min="0" value="6" id="dpw">
+               				</div>
+               				<div class="col-md-6 form-group">
+              						<label>Holidays per Year</label>
+              						<input type="number" class="form-control" min="0" value="0" id="hpy">
+               				</div>
+                           <div class="col-md-6 form-group">
+                              <label>Vacation Days per Year</label>
+                              <input type="number" class="form-control" min="0" value="0" id="vpy">
+                           </div>
+               				<div class="col-md-12 form-group">
+               						<button class="btn btn-block btn-primary" id="calculator-button" onclick="calculate();">CALCULATE</button>
+               				</div>
+               			</div>
+               			<div class="row" id="sl-result">
+                           <table class="table table-sm table-reponsive table-bordered">
+                              <tr>
+                                 <th>Result</th>
+                                 <th>Salaries</th>
+                                 <!-- <th>Holidays & Vacation Days Adjusted</th> -->
+                              </tr>
+                              <tr>
+                                 <td>Hourly</td>
+                                 <td>$<span id="hourlySalary">277.00</span></td>
+                                 <!-- <td>$256.41</td> -->
+                              </tr>
+                              <tr>
+                                 <td>Daily</td>
+                                 <td>$<span id="dailySalary">277.00</span></td>
+                                 <!-- <td>$256.41</td> -->
+                              </tr>
+                              <tr>
+                                 <td>Week</td>
+                                 <td>$<span id="weeklySalary">277.00</span></td>
+                                 <!-- <td>$256.41</td> -->
+                              </tr>
+                              <tr>
+                                 <td>Bi-Weekly</td>
+                                 <td>$<span id="biweeklySalary">277.00</span></td>
+                                 <!-- <td>$256.41</td> -->
+                              </tr>
+                              <tr>
+                                 <td>Semi-Monthly</td>
+                                 <td>$<span id="semimonthlySalary">277.00</span></td>
+                                 <!-- <td>$256.41</td> -->
+                              </tr>
+                              <tr>
+                                 <td>Monthly</td>
+                                 <td>$<span id="monthlySalary">277.00</span></td>
+                                 <!-- <td>$256.41</td> -->
+                              </tr>
+                              <tr>
+                                 <td>Quaterly</td>
+                                 <td>$<span id="quarterlySalary">277.00</span></td>
+                                 <!-- <td>$256.41</td> -->
+                              </tr>
+                              <tr>
+                                 <td>Annualy</td>
+                                 <td>$<span id="annualySalary">277.00</span></td>
+                                 <!-- <td>$256.41</td> -->
+                              </tr>
+                           </table>
+               			</div>
+               		</div>
+               	  </div>
+                    <div class="postShare" data-text="Share:">
+                     <div class="shareContent" data-text="Share:">
+                        <div class="shareIcon facebook">
+                           <a aria-label="Share on Facebook" data-text="Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://www.govtechchallenge.es/" rel="noopener" role="button" target="_blank">
+                              <svg class="c-1" viewBox="0 0 32 32">
+                                 <path d="M24,3H8A5,5,0,0,0,3,8V24a5,5,0,0,0,5,5H24a5,5,0,0,0,5-5V8A5,5,0,0,0,24,3Zm3,21a3,3,0,0,1-3,3H17V18h4a1,1,0,0,0,0-2H17V14a2,2,0,0,1,2-2h2a1,1,0,0,0,0-2H19a4,4,0,0,0-4,4v2H12a1,1,0,0,0,0,2h3v9H8a3,3,0,0,1-3-3V8A3,3,0,0,1,8,5H24a3,3,0,0,1,3,3Z"></path>
+                              </svg>
+                           </a>
+                        </div>
+                        <div class="shareIcon whatsapp">
+                           <a aria-label="Share on Whatsapp" data-text="Whatsapp" href="https://api.whatsapp.com/send?text=https://www.govtechchallenge.es/" rel="noopener" role="button" target="_blank">
+                              <svg class="c-1" viewBox="0 0 32 32">
+                                 <path d="M16,2A13,13,0,0,0,8,25.23V29a1,1,0,0,0,.51.87A1,1,0,0,0,9,30a1,1,0,0,0,.51-.14l3.65-2.19A12.64,12.64,0,0,0,16,28,13,13,0,0,0,16,2Zm0,24a11.13,11.13,0,0,1-2.76-.36,1,1,0,0,0-.76.11L10,27.23v-2.5a1,1,0,0,0-.42-.81A11,11,0,1,1,16,26Z"></path>
+                                 <path d="M19.86,15.18a1.9,1.9,0,0,0-2.64,0l-.09.09-1.4-1.4.09-.09a1.86,1.86,0,0,0,0-2.64L14.23,9.55a1.9,1.9,0,0,0-2.64,0l-.8.79a3.56,3.56,0,0,0-.5,3.76,10.64,10.64,0,0,0,2.62,4A8.7,8.7,0,0,0,18.56,21a2.92,2.92,0,0,0,2.1-.79l.79-.8a1.86,1.86,0,0,0,0-2.64Zm-.62,3.61c-.57.58-2.78,0-4.92-2.11a8.88,8.88,0,0,1-2.13-3.21c-.26-.79-.25-1.44,0-1.71l.7-.7,1.4,1.4-.7.7a1,1,0,0,0,0,1.41l2.82,2.82a1,1,0,0,0,1.41,0l.7-.7,1.4,1.4Z"></path>
+                              </svg>
+                           </a>
+                        </div>
+                        <div class="shareIcon twitter">
+                           <a aria-label="Twitter" href="https://twitter.com/intent/tweet?url=https://www.govtechchallenge.es/&text=" rel="noopener" role="button" target="_blank" title="Share to Twitter">
+                              <svg class="c-1" viewBox="0 0 32 32">
+                                 <path d="M13.35,28A13.66,13.66,0,0,1,2.18,22.16a1,1,0,0,1,.69-1.56l2.84-.39A12,12,0,0,1,5.44,4.35a1,1,0,0,1,1.7.31,9.87,9.87,0,0,0,5.33,5.68,7.39,7.39,0,0,1,7.24-6.15,7.29,7.29,0,0,1,5.88,3H29a1,1,0,0,1,.9.56,1,1,0,0,1-.11,1.06L27,12.27c0,.14,0,.28-.05.41a12.46,12.46,0,0,1,.09,1.43A13.82,13.82,0,0,1,13.35,28ZM4.9,22.34A11.63,11.63,0,0,0,13.35,26,11.82,11.82,0,0,0,25.07,14.11,11.42,11.42,0,0,0,25,12.77a1.11,1.11,0,0,1,0-.26c0-.22.05-.43.06-.65a1,1,0,0,1,.22-.58l1.67-2.11H25.06a1,1,0,0,1-.85-.47,5.3,5.3,0,0,0-4.5-2.51,5.41,5.41,0,0,0-5.36,5.45,1.07,1.07,0,0,1-.4.83,1,1,0,0,1-.87.2A11.83,11.83,0,0,1,6,7,10,10,0,0,0,8.57,20.12a1,1,0,0,1,.37,1.05,1,1,0,0,1-.83.74Z"></path>
+                              </svg>
+                           </a>
+                        </div>
+                        <div class="shareIcon shareButton">
+                           <label for="offshare-check">
+                              <svg class="line" viewBox="0 0 24 24">
+                                 <path class="fill" d="M92.30583,264.72053a3.42745,3.42745,0,0,1-.37,1.57,3.51,3.51,0,1,1,0-3.13995A3.42751,3.42751,0,0,1,92.30583,264.72053Z" transform="translate(-83.28571 -252.73452)"></path>
+                                 <circle class="fill" cx="18.48892" cy="5.49436" r="3.51099"></circle>
+                                 <circle class="fill" cx="18.48892" cy="18.50564" r="3.51099"></circle>
+                                 <line class="cls-3" x1="12.53012" x2="8.65012" y1="8.476" y2="10.416"></line>
+                                 <line class="cls-3" x1="12.53012" x2="8.65012" y1="15.496" y2="13.556"></line>
+                              </svg>
+                           </label>
+                        </div>
+                     </div>
+                     <input class="shareIn hidden" id="offshare-check" type="checkbox">
+                     <div class="shareInner">
+                        <div class="shareBlock">
+                           <div class="shareHeader" data-text="Share to other apps">
+                              <label for="offshare-check">
+                                 <svg class="line" viewBox="0 0 24 24">
+                                    <line x1="18" x2="6" y1="6" y2="18"></line>
+                                    <line x1="6" x2="18" y1="6" y2="18"></line>
+                                 </svg>
+                              </label>
+                           </div>
+                           <div class="shareBox">
+                              <div class="sharePreview">
+                                 <div class="previewImg lazyloaded" data-bg="https://1.bp.blogspot.com/-TwDWRokeCpQ/YQ53QE5Xo3I/AAAAAAAAAZQ/iHs87UEiNQEq11DR1pVb5_S6azH-o9J2QCLcBGAsYHQ/s16000/Loan%2BCalculator.jpg" style="background-image: url(&quot;https://1.bp.blogspot.com/-TwDWRokeCpQ/YQ53QE5Xo3I/AAAAAAAAAZQ/iHs87UEiNQEq11DR1pVb5_S6azH-o9J2QCLcBGAsYHQ/s16000/Loan%2BCalculator.jpg&quot;);"></div>
+                                 <div class="previewContent">
+                                    <div class="previewTitle" data-text="www.GovTechChallenge.es"></div>
+                                    <div class="previewLabel">
+                                       <span data-text="https://www.govtechchallenge.es/"></span>
+                                    </div>
+                                 </div>
+                              </div>
+                              <ul>
+                                 <li>
+                                    <a aria-label="Telegram" data-text="Telegram" href="https://t.me/share/url?url={https://www.govtechchallenge.es/}" rel="noopener" target="_blank">
+                                       <svg viewBox="0 0 32 32">
+                                          <path d="M24,28a1,1,0,0,1-.62-.22l-6.54-5.23a1.83,1.83,0,0,1-.13.16l-4,4a1,1,0,0,1-1.65-.36L8.2,18.72,2.55,15.89a1,1,0,0,1,.09-1.82l26-10a1,1,0,0,1,1,.17,1,1,0,0,1,.33,1l-5,22a1,1,0,0,1-.65.72A1,1,0,0,1,24,28Zm-8.43-9,7.81,6.25L27.61,6.61,5.47,15.12l4,2a1,1,0,0,1,.49.54l2.45,6.54,2.89-2.88-1.9-1.53A1,1,0,0,1,13,19a1,1,0,0,1,.35-.78l7-6a1,1,0,1,1,1.3,1.52Z"></path>
+                                       </svg>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a aria-label="Pinterest" data-pin-config="beside" data-text="Pinterest" href="https://pinterest.com/pin/create/button/?url=https://www.govtechchallenge.es/&media=&description=" rel="noopener" target="_blank">
+                                       <svg class="c-1" viewBox="0 0 32 32">
+                                          <path d="M16,2A14,14,0,1,0,30,16,14,14,0,0,0,16,2Zm0,26a12,12,0,0,1-3.81-.63l1.2-4.81A7.93,7.93,0,0,0,16,23a8.36,8.36,0,0,0,1.4-.12,8,8,0,1,0-9.27-6.49,1,1,0,0,0,2-.35,6,6,0,1,1,3.79,4.56L15,16.24A1,1,0,1,0,13,15.76l-2.7,10.81A12,12,0,1,1,16,28Z"></path>
+                                       </svg>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a aria-label="Linkedin" data-text="Linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.govtechchallenge.es/&title=&summary=&source=" rel="noopener" target="_blank">
+                                       <svg class="c-1" viewBox="0 0 32 32">
+                                          <path d="M24,3H8A5,5,0,0,0,3,8V24a5,5,0,0,0,5,5H24a5,5,0,0,0,5-5V8A5,5,0,0,0,24,3Zm3,21a3,3,0,0,1-3,3H8a3,3,0,0,1-3-3V8A3,3,0,0,1,8,5H24a3,3,0,0,1,3,3Z"></path>
+                                          <path d="M11,14a1,1,0,0,0-1,1v6a1,1,0,0,0,2,0V15A1,1,0,0,0,11,14Z"></path>
+                                          <path d="M19,13a4,4,0,0,0-4,4v4a1,1,0,0,0,2,0V17a2,2,0,0,1,4,0v4a1,1,0,0,0,2,0V17A4,4,0,0,0,19,13Z"></path>
+                                          <circle cx="11" cy="11" r="1"></circle>
+                                       </svg>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a aria-label="Line" data-text="Line" href="https://line.me/R/msg/text/?https://www.govtechchallenge.es/" rel="nofollow noreferrer" target="_blank">
+                                       <svg viewBox="0 0 32 32">
+                                          <path d="M16,2C8.28,2,2,7.38,2,14c0,5.48,4.34,10.24,10.44,11.6L12,28.87a1,1,0,0,0,.37.91A1,1,0,0,0,13,30a1,1,0,0,0,.35-.06C14,29.68,30,23.58,30,14,30,7.38,23.72,2,16,2ZM14.22,27.4l.33-2.47a1,1,0,0,0-.83-1.12C8.09,22.91,4,18.78,4,14,4,8.49,9.38,4,16,4S28,8.49,28,14C28,20.61,18.14,25.66,14.22,27.4Z"></path>
+                                          <path d="M10,15.25H8.75V12a.75.75,0,0,0-1.5,0v4a.76.76,0,0,0,.75.75h2a.75.75,0,0,0,0-1.5Z"></path>
+                                          <path d="M24,12.75a.75.75,0,0,0,0-1.5H22a.76.76,0,0,0-.75.75v4a.76.76,0,0,0,.75.75h2a.75.75,0,0,0,0-1.5H22.75v-.5H24a.75.75,0,0,0,0-1.5H22.75v-.5Z"></path>
+                                          <path d="M13,11.25a.76.76,0,0,0-.75.75v4a.75.75,0,0,0,1.5,0V12A.76.76,0,0,0,13,11.25Z"></path>
+                                          <path d="M19,11.25a.76.76,0,0,0-.75.75v1.75l-1.65-2.2a.75.75,0,0,0-1.35.45v4a.75.75,0,0,0,1.5,0V14.25l1.65,2.2a.75.75,0,0,0,.6.3.67.67,0,0,0,.24,0,.75.75,0,0,0,.51-.71V12A.76.76,0,0,0,19,11.25Z"></path>
+                                       </svg>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a aria-label="Tumblr" data-text="Tumblr" href="http://www.tumblr.com/share/link?url=https%3A%2F%2Fwww.govtechchallenge.es%2F" rel="noopener" target="_blank">
+                                       <svg viewBox="0 0 32 32">
+                                          <path d="M16,2A14,14,0,1,0,30,16,14,14,0,0,0,16,2Zm0,26A12,12,0,1,1,28,16,12,12,0,0,1,16,28Z"></path>
+                                          <path d="M20,19a1,1,0,0,0-1,1,1,1,0,0,1-1,1H17a1,1,0,0,1-1-1V15h3a1,1,0,0,0,0-2H16V10a1,1,0,0,0-2,0v3H12a1,1,0,0,0,0,2h2v5a3,3,0,0,0,3,3h1a3,3,0,0,0,3-3A1,1,0,0,0,20,19Z"></path>
+                                       </svg>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a aria-label="Email" data-text="Email" href="mailto:?&subject=&body=https://www.govtechchallenge.es/" target="_blank">
+                                       <svg class="line" viewBox="0 0 24 24">
+                                          <g transform="translate(2.452080, 2.851980)">
+                                             <path d="M15.0928322,6.167017 C15.0928322,6.167017 11.8828071,10.0196486 9.53493746,10.0196486 C7.18807029,10.0196486 3.941955,6.167017 3.941955,6.167017"></path>
+                                             <path d="M1.04805054e-13,9.11679198 C1.04805054e-13,2.27869674 2.38095238,8.8817842e-15 9.52380952,8.8817842e-15 C16.6666667,8.8817842e-15 19.047619,2.27869674 19.047619,9.11679198 C19.047619,15.9538847 16.6666667,18.233584 9.52380952,18.233584 C2.38095238,18.233584 1.04805054e-13,15.9538847 1.04805054e-13,9.11679198 Z"></path>
+                                          </g>
+                                       </svg>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <div class="copyLink" data-text="Copy link" onclick="copyFunction()">
+                                       <svg class="line" viewBox="0 0 24 24">
+                                          <g transform="translate(3.649800, 2.749900)">
+                                             <line x1="10.6555" x2="5.2555" y1="12.6999" y2="12.6999"></line>
+                                             <line x1="8.6106" x2="5.2546" y1="8.6886" y2="8.6886"></line>
+                                             <path d="M16.51,5.55 L10.84,0.15 C10.11,0.05 9.29,0 8.39,0 C2.1,0 -1.95399252e-14,2.32 -1.95399252e-14,9.25 C-1.95399252e-14,16.19 2.1,18.5 8.39,18.5 C14.69,18.5 16.79,16.19 16.79,9.25 C16.79,7.83 16.7,6.6 16.51,5.55 Z"></path>
+                                             <path d="M10.2844,0.0827 L10.2844,2.7437 C10.2844,4.6017 11.7904,6.1067 13.6484,6.1067 L16.5994,6.1067"></path>
+                                          </g>
+                                       </svg>
+                                    </div>
+                                    <input id="getlink" readonly="readonly" type="text" value="https://www.govtechchallenge.es/">
+                                    <div class="shareNotif" id="shareNotif"></div>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                        <label class="fullClose" for="offshare-check"></label>
+                     </div>
+                  </div>
+                  <h2>Income Calculator</h2>
+                  <p>Hello and welcome to free online income calculator. Available free for everyone.</p>
+                  <p>Use our income calculator to find out how much you earn hourly, daily, weekly, bi-weekly, monthly, semi-monthly, quarterly, yearly. It best Free income calculator to determine repayment plan, interest cost. Loan Calculator. Calculate Your Monthly Payment. Online Income Calculator tool makes the calculation faster. you can estimate what your income would be. see how much your hourly, daily, weekly, monthly, yearly.<br>Income Calculator is an easy-to-use online tool 100% FREE, BEST, NO LIMIT Calculate in real-time. Mobile-friendly. Easy to use. Use our online income calculator tool. income calculator is one of the best and Advances free online banking/financial calculating tool (income calculator)</p>
+                  
+                  <!-- <img src="assets/ad-rectangle.jpg" width="100%;"> -->
+                  <h2>How to use a income calculator?</h2>
+                  <p >1. Enter income amount<br>
+                  2. Enter income type<br>
+                  3. Enter income per week<br>
+                  4. Enter income day per week<br>
+                  5. Click calculate button<br>
+                  6. Now you can see your income information<br>
+                  7. That’s it!</p>
+                  <p>www.govtechchallenge.es is one of the best and Advances free online income calculator tools (income calculator).
+                  Welcome to one of the best calculator websites here we can calculate almost all kinds of mathematical.</p>
+                  <h2>Why use this income calculator website?</h2>
+                  <p>This website is going to save you lots of time you don't have to do any paper works, You can calculate complicated finance/accounting, mathematical works in just one click. I will say this is one of the best calculator websites.</p>
+                  <p>We are also launching many other finance/accounting, mathematic calculator tools like car loan calculator, student loan calculator, Income Calculator, Salary To Hourly Calculator, Salary Calculator, Mortgage Repayment Calculator, Student Loan Calculator, Personal Loan Calculator, Mortgage Payment Calculator, Home Loan Calculator, Car Payment Calculator, Cross Product Calculator, Density Calculator, Percentage Calculator, Factoring Calculator, Standard Deviation Calculator, etc, and many more.</p>
+
+                  <p class="note" style="position: relative;
+    padding: 20px 30px 20px 50px;
+    background-color: #e1f5fe;
+    color: #01579b;
+    font-size: 1.2rem;
+    line-height: 1.62em;
+    border-radius: 2px;"><strong>Disclaimer:</strong> This Domain is New Helping Mind is not at all related to any government organization. This is Not directly or indirectly related to Any Official Government Website. We do not claim to be any government body or any government official in any manner.  www.govtechchallenge.es just provides Mathematics And Finance Calculator for reference education purpose only. For Any query or info directly contact at: MeDevDas@hotmail.com. Thank You 🙏
+</p>
+               </main>
+               <!-- SIDEBAR -->
+               <!-- <aside class='sidebar'>
+                  <img src="assets/ad-square.jpg" width="100%;">
+                  <img src="assets/ad-square.jpg" width="100%;">
+                  <img src="assets/ad-square.jpg" width="100%;">
+               </aside> -->
+            </div>
+         </div>
+         <footer class='sectionInner'>
+            <div class='creditInner'>
+               <p>&#169; <span id='getYear'></span> &#8231; <a href='https://www.govtechchallenge.es/'>www.GovTechChallenge.es</a>. All rights reserved.</p>
+               <div class='toTop' onclick='window.scrollTo({top: 0});'>
+                  <svg class='line' viewBox='0 0 24 24'>
+                     <g transform='translate(12.000000, 12.000000) rotate(-180.000000) translate(-12.000000, -12.000000) translate(5.000000, 8.500000)'>
+                        <path d='M14,0 C14,0 9.856,7 7,7 C4.145,7 0,0 0,0'></path>
+                     </g>
+                  </svg>
+               </div>
+            </div>
+         </footer>
+      </div>
+   </body>
+</html>

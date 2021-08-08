@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Online Factoring Calculator tool makes the calculation faster</title>
+   <meta name="Description" content="100% Best free Factoring Calculator Shows you step-by-step how to factor expressions. helps you to factor, expand or simplify polynomials, algebraic expression">
+   <meta name="Keywords" content="factoring calculator, factoring polynomials calculator, algebraic expression calculator">
+
+    <link rel="icon" href="favicon.png" type="image/gif" sizes="16x16">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <style>
+        .form-control{
+            width: 60px;
+            height: 50px;
+            text-align: center;
+            font-size: 16px;
+        }
+    </style>
+    <style>
+
+
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        p{
+            font-size: 11px;
+            line-height: 11px;
+        }
+        li{
+            font-size: 11px;
+            line-height: 11px;
+        }#social{
+             background-color: rgba(52, 71, 255, 0.7);
+             width: 30px;
+             height: 30px;
+             border-radius: 5px;
+             padding: 5px;
+             margin: 5px;
+
+         }
+    </style>
+    <script>
+
+        function calculate() {
+            if (document.getElementById('a').value.length===0 ){
+                document.getElementById('alert').style.display="block";
+                document.getElementById('answer').innerHTML="";
+                document.getElementById('factors').innerHTML="";
+            }//if a empty end
+            else if(document.getElementById('b').value.length===0){
+                document.getElementById('alert').style.display="block";
+                document.getElementById('answer').innerHTML="";
+                document.getElementById('factors').innerHTML="";
+
+
+            }//if b empty end
+            else if (document.getElementById('c').value.length===0){
+                document.getElementById('factors').innerHTML="";
+
+                document.getElementById('alert').style.display="block";
+                document.getElementById('answer').innerHTML="";
+
+            }//if c empty end
+            else {
+                //alert hide
+                document.getElementById('alert').style.display="none";
+                //getting a b c
+                var a=document.getElementById('a').value;
+                var b=document.getElementById('b').value;
+                var c=document.getElementById('c').value;
+                //parsing it
+                a=parseInt(a);b=parseInt(b);c=parseInt(c);
+                var square_root=(b*b)-(4*a*c);
+                if (square_root >= 0){
+                    var solution1 = (-b+Math.sqrt(square_root))/(2*a);
+                    var solution2 = (-b-Math.sqrt(square_root))/(2*a);
+
+                    if (!Number.isInteger(solution1)){
+                        //alert('not integer');
+                        document.getElementById('answer').innerHTML=a+"x<sup>2</sup>+"+b+"x+"+c+" <br>Doesn't Factorize";
+                        document.getElementById('factors').innerHTML = "";
+                    }
+                    else if (!Number.isInteger(solution2)){
+                        document.getElementById('factors').innerHTML = "";
+                        document.getElementById('answer').innerHTML=a+"x<sup>2</sup>+"+b+"x+"+c+" <br>Doesn't Factorize";
+
+                        //alert('not integer');
+                    }
+                    else {
+                        document.getElementById('evaluate').style.display="block";
+                        if (solution1<0){
+                            if (solution2<0){
+                                document.getElementById('factors').innerHTML = "(x+" + (-solution1) + ")(x+" + (-solution2) + ")";
+                            }
+                        }
+                        if (solution2>0){
+                            if (solution1>0){
+                                document.getElementById('factors').innerHTML = "(x-" + (solution1) + ")(x-" + (solution2) + ")";
+                            }
+                        }
+                        if (solution1>0){
+                            if (solution2<0){
+                                document.getElementById('factors').innerHTML = "(x-" + (solution1) + ")(x+" + (-solution2) + ")";
+                            }
+                        }
+                        if (solution1<0){
+                            if (solution2>0){
+                                document.getElementById('factors').innerHTML = "(x-" + (solution1) + ")(x+" + (solution2) + ")";
+                            }
+                        }
+                        document.getElementById('answer').innerHTML=a+"x<sup>2</sup>+"+b+"x+"+c+"";
+                    }
+
+                } //if positive value in square root
+                else{
+                    document.getElementById('factors').innerHTML = "";
+                    document.getElementById('answer').innerHTML=a+"x<sup>2</sup>+"+b+"x+"+c+" <br>Doesn't Factorize";
+                }
+
+            }//if abc not empty end
+
+        }//function end
+
+    </script>
+    <script>
+        function evaluation() {
+            if (document.getElementById('x').value.length===0){
+                alert("The value of x is missing");
+            }else if (document.getElementById('a').value.length===0){
+                alert("The value of a is missing");
+            }else if (document.getElementById('b').value.length===0){
+                alert("The value of b is missing");
+            }else if (document.getElementById('c').value.length===0){
+                alert("The value of c is missing");
+            }else {
+                var x=document.getElementById('x').value;
+                var a=document.getElementById('a').value;
+                var b=document.getElementById('b').value;
+                var c=document.getElementById('c').value;
+                a=parseInt(a);b=parseInt(b);c=parseInt(c);
+                document.getElementById('step1').innerHTML=
+                    "Evaluate for x="+x+"<br>=("+a+")("+x+")<sup>"+2+"</sup>"+"+("+b+")("+x+")+"+c+"<br>="+(a*(x*x))+"+"+(b*x)+"+"+c+"<br>="+((a*(x*x))+(b*x)+c);
+
+            }
+
+
+        }
+    </script>
+    <script>
+        function clearall() {
+
+            document.getElementById('evaluate').style.display="none";
+            document.getElementById('answer').style.display="none";
+            document.getElementById('factors').style.display="none";
+        }
+    </script>
+	
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand p-0" href="https://www.govtechchallenge.es/">
+        <img src="favicon.png" class="img-fluid" width="32px">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+<a href="https://www.govtechchallenge.es/" class="nav-link">Home</a>
+</li>
+<li class="nav-item">
+<a href="https://www.govtechchallenge.es/standard-deviation-calculator" class="nav-link">Standard Deviation Calculator</a>
+</li>
+<li class="nav-item">
+<a href="https://www.govtechchallenge.es/percentage-calculator" class="nav-link">Percentage Calculator</a>
+</li>
+<li class="nav-item">
+<a href="https://www.govtechchallenge.es/about" class="nav-link">About Us</a>
+</li>
+<li class="nav-item">
+<a href="https://www.govtechchallenge.es/contact" class="nav-link">Contact Us</a>
+</li>
+        </ul>
+    </div>
+</nav>
+<div class="container">
+    <div class="row mt-4">
+        <div class="col-md-2 col-12">
+            <div class="card bg-light" style="height: 100%">
+                <h2 class="mt-5 text-center"> </h2>
+				
+            </div>
+        </div>
+        <div class="col-md-8 col-12">
+            <div class="row">
+                <h1 class="font-weight-light"><b>Factoring Calculator</b></h1>
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body bg-light">
+                            <h3  class="font-weight-light text-center"><b><u>Solution</u></b></h3>
+                            <h4 class="font-weight-light text-center" id="answer"></h4>
+                            <h4 class="font-weight-light text-center" id="factors"></h4>
+                            <div class="col-12 mt-5 bg-light p-4" id="evaluate" style="display: none">
+                                <input type="text" class="form-control float-left" placeholder="x" id="x"/><h2 class="float-left">=?</h2>
+                                <input onclick="evaluation()" class="btn ml-5 btn-lg btn-primary" value="Evaluate" type="button">
+                                <input onclick="clearall()" class="btn ml-5 btn-lg btn-primary" value="Clear" type="button">
+                                <hr>
+                                <h6 id="step1"></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <h3 class="mt-5 font-weight-light">ax<sup>2</sup>+bx+c</h3>
+                    <h5>What do you want to calculate? Example: 1x<sup>2</sup>+2x+1</h5>
+                    <div class="alert alert-info alert-dismissible fade show" id="alert" role="alert" style="display: none">
+                        Enter value of a b c to calculate
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <form method="post" class="mt-md-5 mt-4">
+
+                        <input type="text" name="a" id="a" placeholder="a" class="form-control float-left">
+                        <h3 class="font-weight-light px-2 float-left ml-2"> x<sup>2</sup>+</h3>
+                        <input type="text" name="b" id="b" placeholder="b" class="form-control float-left">
+                        <h3 class="font-weight-light px-2 float-left"> + x +</h3>
+
+                        <input type="text" name="c" id="c" placeholder="c" class="form-control float-left">
+                        <input onclick="calculate()" name="sol" class="btn btn-primary btn-lg float-md-right mt-md-0 mt-3" type="button" value="Calculate it">
+                    </form>
+
+                </div>
+
+
+            </div>
+            <div class="row">
+                <div class="col-12 my-5">
+                    <div class="card bg-light" style="height: 100%">
+                        <h2 class="my-5 pt-5 text-center"> </h2>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-2 mt-md-0 mt-5 col-12">
+            <div class="card bg-light" style="height: 100%">
+                <h2 class="mt-5 text-center"> </h2>
+			
+            </div>
+        </div>
+       <div class="col-md-12 col-12 mt-md-5  py-md-12">
+            <h2><u>Factoring Formulas</u>:</h2>
+			<ul>
+			<li>(a + b)
+2 = a
+2 + 2ab + b
+2 Square of a Sum</li>
+			<li>(a − b)
+2 = a
+2 − 2ab + b
+2 Square of a Difference</li>
+			<li>a
+2 − b
+2 = (a − b)(a + b) Difference of Squares</li>
+			<li>a
+3 − b
+3 = (a − b)(a
+2 + ab + b
+2
+) Difference of Cubes</li>
+			<li>a
+3 + b
+3 = (a + b)(a
+2 − ab + b
+2
+) Sum of Cubes</li>
+			
+			</ul>
+            <h3><u>Factoring Calculator</u>:</h3>
+			<h4>What is Factoring Calculator? - Finding what was multiplied together (“the factors”) to get an expression (the
+polynomial).</h4>
+            <h4>Why is it done? – To aid in solving equations.</h4>
+			<h4>How is it done? – Follow the general steps outlined below in order.</h4>
+            <h4>How to factor expressions</h4>
+            <h5>If you are factoring a quadratic like 1x^2+2x+1 you want to find two numbers that</h5>
+            <ul>
+                <li>Add up to 2</li>
+                <li>Multiply together to get 1</li>
+            </ul>
+            <h6>Since 1 and 2 add up to 2 and multiply together to get 1, we can factor it like: (x+1)(x+2)</h6>
+           
+			<h3>What is factoring?</h3>
+			<p>Well, factoring is the process of finding what to multiply together to get an expression. So let's take a look at an example of a polynomial in its expanded form as well as its factored form. If you take the polynomial form of X^2+7X+12 and you ask yourself the question what do I have to multiply together to get that expression? You're asking to find the factored form of that polynomial. And the factored form of X^2+7X+12 happens to be (X+3) times (X+4) Now you might recognize this from a previous chapter on distribution and multiplying polynomials. So, to check and just make sure that this truly is the factored form of this polynomial you would simply multiply it back out using distribution. So we'll distribute the X to each term in the second polynomial and then I'll come back and distribute the 3 to both terms of the second polynomial. When you multiply X times X, you get X^2 and X times 4 is simply positive 4X. Coming back and multiplying the 3 by X, I get positive 3X and multiplying the 3 by the 4 I get positive 12. Now you also learned in a previous chapter that you should always combine like terms and when we do so we end up with the polynomial X^2+7x+12 which is exactly what we began with in our polynomial form. So the factored form of this particular polynomial is (X+3) times (X+4).</p>
+        </div>
+    </div>
+
+
+</div>
+
+<div class="col-12 p-2">
+    <b class="float-left">Copyright <span>&#169;</span>2021</b>
+   
+</div>
+</body>
+</html>

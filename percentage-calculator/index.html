@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Percent Calculator[%] - [Free Online Tool]</title>
+	<meta name="Description" content="Percent Change Calculator is a online free calculator tool, You can easily calculate any Percentage, world best Percent change calculator Easy to use, 100% Accurate Quickly Answer">
+    <meta name="Keywords" content="Percent Change Calculator, percentage calculator, percent increase calculator, percentage difference calculator online, percentage decrease calculator, percentage formula in calculator, marks percentage calculator, percent difference vs percent change">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+
+        function clearing() {
+
+            document.getElementById('solution-section').style.display="none";
+            document.getElementById('value1').value="e";
+            document.getElementById('value2').value="";
+            document.getElementById('result').innerHTML="";
+
+        }
+        function calculate() {
+            if (document.getElementById('value1').value.length===0){
+
+                alert("VALUES CANT BE EMPTY");
+            }
+            else if ( document.getElementById('value2').value.length===0){
+                alert("VALUES CANT BE EMPTY");
+            }
+            else {
+                document.getElementById('solution-section').style.display="block";
+                //alert(Math.abs(-44));
+                var value1 = parseInt(document.getElementById('value1').value);
+                var value2 = parseInt(document.getElementById('value2').value);
+                var result=((value2-value1)/Math.abs(value1))*100;
+                document.getElementById('one').innerHTML=value1;
+                document.getElementById('two').innerHTML=value2;
+                document.getElementById('denominator').innerHTML=value1;
+                document.getElementById('num').innerHTML=value2-value1;
+                document.getElementById('den').innerHTML=value1;
+
+                if (Number.isInteger(((value2-value1)/Math.abs(value1)))){
+                    document.getElementById('step3').innerHTML=((value2-value1)/Math.abs(value1))+" x 100";
+
+                    document.getElementById('step4').innerHTML=(((value2-value1)/Math.abs(value1))*100)+"% change";
+                }else{
+                    document.getElementById('step3').innerHTML=((value2-value1)/Math.abs(value1)).toFixed(2)+" x 100";
+                    document.getElementById('step4').innerHTML=(((value2-value1)/Math.abs(value1))*100).toFixed(2)+"% change";
+                }
+
+
+
+
+                if (value2 >= value1)
+                {
+                    if (Number.isInteger(result)){
+                        document.getElementById('result').innerHTML=Math.abs(result)+"% increase";
+                        document.getElementById('step5').innerHTML=Math.abs(result)+"% increase";
+
+                    }
+                    else {
+                        document.getElementById('result').innerHTML=Math.abs(result).toFixed(2)+"% increase";
+                        document.getElementById('step5').innerHTML=Math.abs(result).toFixed(2)+"% increase";
+
+                    }
+
+                }
+                else {
+                    if (Number.isInteger(result)){
+                        document.getElementById('result').innerHTML=Math.abs(result)+"% decrease";
+                        document.getElementById('step5').innerHTML=Math.abs(result)+"% decrease";
+
+                    }
+                    else {
+                        document.getElementById('result').innerHTML=Math.abs(result).toFixed(2)+"% decrease";
+                        document.getElementById('step5').innerHTML=Math.abs(result).toFixed(2)+"% decrease";
+
+                    }
+                }
+
+            }
+        }
+
+
+    </script>
+    <style>
+
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        p{
+            font-size: 11px;
+            line-height: 11px;
+        }
+        li{
+            font-size: 11px;
+            line-height: 11px;
+        }
+        #social{
+            background-color: rgba(52, 71, 255, 0.7);
+            width: 30px;
+            height: 30px;
+            border-radius: 5px;
+            padding: 5px;
+            margin: 5px;
+
+        }
+    </style>
+	
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand p-0" href="https://www.govtechchallenge.es/">
+        <img src="favicon.png" class="img-fluid" width="40px">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+<a href="https://www.govtechchallenge.es/" class="nav-link">Home</a>
+</li>
+<li class="nav-item">
+<a href="https://www.govtechchallenge.es/standard-deviation-calculator" class="nav-link">Standard Deviation Calculator</a>
+</li>
+<li class="nav-item">
+<a href="https://www.govtechchallenge.es/percentage-calculator" class="nav-link">Percentage Calculator</a>
+</li>
+<li class="nav-item">
+<a href="https://www.govtechchallenge.es/about" class="nav-link">About Us</a>
+</li>
+<li class="nav-item">
+<a href="https://www.govtechchallenge.es/contact" class="nav-link">Contact Us</a>
+</li>
+        </ul>
+    </div>
+</nav>
+<div class="container">
+    <div class="row mt-3">
+        <div class="col-md-2 col-12 mb-2">
+            <div class="card bg-light" style="height: 100%">
+                <h2 class="mt-5 pt-5 text-center">     </h2>
+				
+
+            </div>
+        </div>
+        <div class="col-md-8 col-12">
+            <div class="card">
+                <div class="card-body bg-light">
+                    <div class="row">
+                        <h3 class="font-weight-light mt-2 float-left"><b><u>Solution</u> :</b></h3>
+                        <h3 class="ml-3 font-weight-light mt-2 float-left" id="result"></h3>
+                    </div>
+                    <div id="solution-section" style="display: none">
+                        <div class="col-12" ><span style="border-bottom: 1px solid #000000">( V2 − V1 )</span> × 100</div>
+                        <div class="col-12 ml-3">|V1|</div>
+
+
+                        <div class="col-12"><span style="border-bottom: 1px solid #000000">( <span id="one"></span> − <span
+                                id="two"></span> ) </span><span> × 100</span></div>
+                        <div class="col-md-1 ml-3">|<span id="denominator"></span>|</div>
+
+                        <div class="col-12"><span style="border-bottom: 1px solid #000000"><span
+                                id="num"></span></span><span> × 100</span></div>
+                        <div class="col-md-1 ml-1"><span id="den"></span></div>
+                        <h6 class="font-weight-light ml-2" id="step3"></h6>
+                        <h6 class="font-weight-light ml-2" id="step4"></h6>
+                        <h6 class="font-weight-light ml-2" id="step5"></h6>
+
+                    </div>
+                </div>
+            </div>
+
+            <h1 style="color: #007bff;"> <b><u>%Percentage Change Calculator</u></b></h1>
+            <h5>Percent change calculator uses this formula:</h5>
+            <p>((v2 - v1) / v1)*100  your percent change. v1 is the original value, and v2 is the value it changed to.</p>
+            <hr>
+            <label for="value1"><b>v1(1st Value)</b></label>
+            <input type="number" class="form-control" value="" placeholder="Enter value 1" name="value1" id="value1"/>
+            <label for="value2"><b>v2(2nd Value)</b></label>
+            <input type="number" class="form-control" value="" placeholder="Enter value 2" name="value2" id="value2"/>
+            <button class="btn btn-primary btn-lg btn-block my-4" onclick="calculate()"> Percent Change Calculator</button>
+			
+			
+                <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                <div class="addthis_inline_share_toolbox"></div>
+            
+			
+            <div class="col-12 mb-4">
+                <div class="card bg-light" style="height: 100%">
+                    <h2 class="my-5 text-center"> </h2>
+					
+					
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2 my-3 col-12">
+            <div class="card bg-light" style="height: 100%">
+                <h2 class="mt-5 pt-md-5 pt-0 text-center"> </h2>
+				
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="alert alert-info" role="alert">
+			This is Free Percentage Change calculator is for general information and educational purposes. Learn how to find percent change in this free math calculator. easy to use, 100% accurate answer.
+			</div>
+			<div class="alert alert-info" role="alert">
+			 <h2>Finding Percent Change (Formula)</h2>
+			 <h4>Increase = New Number - Original Number. % increase = Increase ÷ Original Number × 100</h4>
+			 <h4>Decrease = Original Number - New Number. % Decrease = Decrease ÷ Original Number × 100</h4>
+			</div>
+        </div>
+
+        <div class="col-md-12">
+		<h2>How to Calculate Percentage Change?</h2>
+		<h4>What is percentage change?</h4>
+		<h6>Percentage change (or percent change) measures the difference in value using percentages.</h6>
+		<h2>How is percentage change used in Extension?</h2>
+		<h6>Percent change is one means of demonstrating program impact or conveying the magnitude of a
+change. It shows the difference between the after vs. before values. Percentage change can be
+positive or negative. Numbers (frequency counts) are typically used in the formula but
+percentages can be as well.</h6>
+         <h3>How do you calculate percentage change?</h3>
+		 <h6>((after value – before value) / before value) * 100 = % change. Simply subtract the before value from the after value; then divide by the before value.
+Multiply the result by 100. Add a % sign and that is your percentage change.</h6>
+            <h2>How can I calculate a percentage change ?</h2>
+			
+            <h4>To calculate a percentage change, you can use this formula: (((v2- v1))/ v1) * 100.</h4>
+            
+			<h3>Calculating percentages using a calculator</h3>
+			<h6>Here is a warning about using the percentage button on a calculator: the result depends on when
+you press the % button in your calculation. Sometimes it has no effect, sometimes it seems to
+divide by 100, and at other times it multiplies by 100. Here are some examples</h6>
+          <ul>
+		  <li>Pressing 48÷400% gives an answer of 12. Now 48÷400 = 0.12, so pressing the % button
+has had the effect of multiplying by 100. This has found 48 as a percentage of 400.</li>
+		  <li>Pressing 1 ÷ 2 × 300% gives the answer 1.5. Now 1 ÷ 2 × 300 = 150, so pressing the %
+button here has divided by 100. This has found 300% of a half.</li>
+		  <li>Pressing 400 × 50% gives an answer of 200. Now 400 × 50 = 20, 000, so pressing % here
+has divided by 100. This has found 50% of 400.</li>
+		  <li>Pressing 50% × 400 results in 400 on the display, requiring = to be pressed to display an
+answer of 20,000. So pressing the % button here has had no effect.</li>
+		  </ul>
+            <h3>Percentage Change Error</h3>
+			<p>The percent error is used in many scientific applications. In labs, it measures how
+accurate an experiment is, compared to the expected (often numerical) outcome.</p>
+<p>Calculating percentage change and expressing an increase or decrease. ( ΔV / |V1| ) * 100 = ((V2 - V1) / |V1|) * 100 = percentage change.</p>
+        </div>
+    </div>
+</div>
+<div class="col-12 p-2 mt-5">
+    <b class="float-left">Copyright <span>&#169;</span>2021</b>
+   
+</div>
+</body>
+</html>
