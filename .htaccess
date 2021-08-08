@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{HTTPS_HOST} ^en\.govtechchallenge\.es$   [NC]
+RewriteRule ^ https://www.govtechchallenge.es/  [L,R]
